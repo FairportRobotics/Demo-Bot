@@ -20,14 +20,15 @@ public class DriveSubsystem extends Subsystem {
 	private Talon leftTalon;
 	private Talon rightTalon;
 	
-	private Relay relay;
-
+	private Relay relayLeft;
+    private Relay relayRight;
+    
 	public DriveSubsystem()
 	{
 		leftTalon = initializeTalon(RobotMap.LEFT_TALON_CHANNEL);
 		rightTalon = initializeTalon(RobotMap.RIGHT_TALON_CHANNEL);
-		relay = new Relay(0);
-		relay.set(Value.kForward);
+		relayLeft = new Relay(0);
+		relayLeft.set(Value.kForward);
 	}
 
 	public void initDefaultCommand() {
