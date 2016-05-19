@@ -18,5 +18,5 @@ public class RobotMap {
 	
 	public static final int LEFT_TALON_CHANNEL = 0;
 	public static final int RIGHT_TALON_CHANNEL = 1;
-	public static final int BUBBLE_RELAY = -1;
+	public static final int BUBBLE_TALON= -1;
 }
