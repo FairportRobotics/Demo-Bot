@@ -5,7 +5,9 @@ import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+
 import org.usfirst.frc.team578.robot.commands.DriveCommand;
+import org.usfirst.frc.team578.robot.subsystems.BubbleSubsystem;
 import org.usfirst.frc.team578.robot.subsystems.DriveSubsystem;
 
 /**
@@ -18,6 +20,7 @@ import org.usfirst.frc.team578.robot.subsystems.DriveSubsystem;
 public class Robot extends IterativeRobot {
 
 	public static final DriveSubsystem driveSubsystem = new DriveSubsystem();
+	public static final BubbleSubsystem bubbleSubsystem = new BubbleSubsystem();
 	public static OI oi;
 
     Command autonomousCommand;

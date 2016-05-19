@@ -1,6 +1,10 @@
 package org.usfirst.frc.team578.robot;
 
+import org.usfirst.frc.team578.robot.commands.BubbleCommand;
+
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.buttons.Button;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -41,6 +45,8 @@ public class OI {
 	{
 		leftJoy = new Joystick(0);
 		rightJoy = new Joystick(1);
+		Button relayButton = new JoystickButton(leftJoy,4);
+		relayButton.whenReleased(new BubbleCommand());
 	}
 	
 	public double getLeftStickX()
