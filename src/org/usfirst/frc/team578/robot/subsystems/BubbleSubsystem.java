@@ -4,17 +4,20 @@ import edu.wpi.first.wpilibj.Relay;
 
 import org.usfirst.frc.team578.robot.RobotMap;
 
+import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.Relay.Value;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class BubbleSubsystem extends Subsystem{
 
-	private Talon bubbler;
+	private CANTalon bubbler;
 	
 	public BubbleSubsystem()
 	{
-		bubbler = new Talon(RobotMap.BUBBLE_TALON);
+		bubbler = new CANTalon(RobotMap.BUBBLE_TALON);
+		bubbler.changeControlMode(CANTalon.TalonControlMode.PercentVbus);
+		bubbler.enableControl();
 	}
 	
 	public void on()
