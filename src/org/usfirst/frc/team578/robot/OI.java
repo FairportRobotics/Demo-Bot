@@ -1,6 +1,7 @@
 package org.usfirst.frc.team578.robot;
 
 import org.usfirst.frc.team578.robot.commands.BubbleCommand;
+import org.usfirst.frc.team578.robot.commands.TshirtFireCommand;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
@@ -46,7 +47,7 @@ public class OI {
 		leftJoy = new Joystick(0);
 		rightJoy = new Joystick(1);
 		Button relayButton = new JoystickButton(leftJoy,4);
-		relayButton.whenReleased(new BubbleCommand());
+		relayButton.whenReleased(new TshirtFireCommand());
 	}
 	
 	public double getLeftStickX()

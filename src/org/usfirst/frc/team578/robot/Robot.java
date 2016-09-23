@@ -9,6 +9,7 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import org.usfirst.frc.team578.robot.commands.DriveCommand;
 import org.usfirst.frc.team578.robot.subsystems.BubbleSubsystem;
 import org.usfirst.frc.team578.robot.subsystems.DriveSubsystem;
+import org.usfirst.frc.team578.robot.subsystems.TshirtCannonSubSystem;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -21,6 +22,7 @@ public class Robot extends IterativeRobot {
 
 	public static final DriveSubsystem driveSubsystem = new DriveSubsystem();
 	public static final BubbleSubsystem bubbleSubsystem = new BubbleSubsystem();
+	public static final TshirtCannonSubSystem tshirtCannonSubSystem = new TshirtCannonSubSystem();
 	public static OI oi;
 
     Command autonomousCommand;
