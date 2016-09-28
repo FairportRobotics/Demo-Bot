@@ -38,7 +38,7 @@ public class TshirtCannonSubSystem extends Subsystem {
 				{
 					System.out.println("I fired forward!");
 					cannons.set(Relay.Value.kForward);
-					lastFired = System.currentTimeMillis();
+					//lastFired = System.currentTimeMillis();
 					leftCannon = false;
 				} else {
 					System.out.println("I fired backward!");
